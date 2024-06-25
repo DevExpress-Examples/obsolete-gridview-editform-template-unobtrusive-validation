@@ -1,8 +1,3 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/134060148/11.2.7%2B)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E3744)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 <!-- default file list -->
 *Files to look at*:
 
@@ -14,9 +9,6 @@
 * [ProductFormPartial.cshtml](./CS/Views/Home/ProductFormPartial.cshtml)
 <!-- default file list end -->
 # OBSOLETE - How to enable unobtrusive validation for GridView using the EditForm template
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/e3744)**
-<!-- run online end -->
 
 
 <p>Starting with DevExpress 14.1, the ASP.NET MVC GridView extension fully supports the unobtrusive client validation for built-in edit forms. Refer to the <a href="https://www.devexpress.com/Support/Center/p/S173266">Support unobtrusive validation for the GridView's built-in edit form</a> thread to learn more.<br /><br />If you have version v14.1+ available, consider using the built-in functionality instead of the approach detailed below.<br />If you need further clarification, create a new ticket in our Support Center.<br /><br />The example illustrates how to implement unobtrusive validation for GridView editors. Create an Edit Form template that contains a form and all necessary editors. Corresponding validation attributes will be rendered for the template.<br /> The main requirement is that the updating should be performed using a helper script. In the script block, we prepare validation conditions and check them for the form (that is located within the Edit Form template). If all editors are valid, the grid's <strong>UpdateEdit</strong> command is invoked.</p>
